@@ -110,7 +110,7 @@ set wildignore+=*/.gem/*,*/vendor/Plug/*,*/tmp/*,log/*,*/tmp/*,*/public/system*,
 
 Plug 'wikitopian/hardmode'
 
-" GIT
+" GIT {{{
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
@@ -124,6 +124,7 @@ set background=dark
 Plug 'Shutnik/jshint2.vim'
 let jshint2_save = 1
 let jshint2_close = 0
+" }}}
 
 " VIM Flod {{{
 augroup vimrc
