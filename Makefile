@@ -1,4 +1,4 @@
-install: vim tmux
+install: vim tmux fish
 
 vim:
 	mkdir -p ~/.vim
@@ -12,4 +12,10 @@ vim:
 tmux:
 	cp ./.tmux.conf ~/.tmux.conf
 
-.PHONY: vim tmux install
+fish:
+	utils/install.sh fish
+	chsh -s $$(cat /etc/shells | grep 'fish')
+	curl -L https://get.oh-my.fish | fish
+	omf install bobthefish
+
+.PHONY: vim tmux fish install
