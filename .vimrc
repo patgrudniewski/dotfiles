@@ -117,9 +117,13 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 filetype plugin indent on
 
-let g:solarized_termcolors=256
-colorscheme solarized
-set background=dark
+" Color scheme {{{
+if !empty(globpath(&rtp, 'colors/solarized.vim'))
+    let g:solarized_termcolors=256
+    colorscheme solarized
+    set background=dark
+endif
+" }}}
 
 Plug 'Shutnik/jshint2.vim'
 let jshint2_save = 1
