@@ -14,6 +14,9 @@ vim:
 	vim +PlugInstall! -c qa!
 
 tmux:
+	utils/install.sh \
+		tmux-powerline \
+		tmux
 	cp ./.tmux.conf ~/.tmux.conf
 
 fish:
