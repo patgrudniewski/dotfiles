@@ -15,6 +15,7 @@ vim:
 
 tmux:
 	utils/install.sh \
+		tmuxinator \
 		tmux-powerline \
 		tmux
 	cp ./.tmux.conf ~/.tmux.conf
@@ -24,5 +25,6 @@ fish:
 	chsh -s $$(cat /etc/shells | grep 'fish')
 	curl -L https://get.oh-my.fish | fish
 	omf install bobthefish
+	cp ./config.fish ~/.config/fish/config.fish
 
 .PHONY: vim tmux fish install
