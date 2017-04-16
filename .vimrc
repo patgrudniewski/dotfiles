@@ -59,6 +59,9 @@ map <Leader>c :Gcommit<CR>
 map <Leader>ig :IndentGuidesToggle<CR>
 map <C-p> :CtrlP<CR>
 
+nmap <silent> <Leader>x :%XMLBeautify<CR>
+vmap <silent> <Leader>x :XMLBeautify<CR>
+
 " }}}
 
 call plug#begin('~/.vim/plugged')
@@ -77,6 +80,7 @@ Plug 'edkolev/promptline.vim'
 Plug 'chase/vim-ansible-yaml'
 Plug 'tpope/vim-markdown'
 Plug 'groenewege/vim-less'
+Plug 'patgrudniewski/vim-xml-beautifier'
 
 " Nerd {{{
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
