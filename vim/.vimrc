@@ -81,6 +81,7 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'tpope/vim-markdown'
 Plug 'groenewege/vim-less'
 Plug 'patgrudniewski/vim-xml-beautifier'
+Plug 'sheerun/vim-polyglot'
 
 " Nerd {{{
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -121,6 +122,8 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 filetype plugin indent on
 
+" }}}
+
 " Color scheme {{{
 if !empty(globpath(&rtp, 'colors/solarized.vim'))
     let g:solarized_termcolors=256
@@ -128,6 +131,11 @@ if !empty(globpath(&rtp, 'colors/solarized.vim'))
     set background=dark
 endif
 " }}}
+
+" JS {{{
+Plug 'mxw/vim-jsx'
+
+let g:jsx_ext_required = 0
 
 Plug 'Shutnik/jshint2.vim'
 let jshint2_save = 1

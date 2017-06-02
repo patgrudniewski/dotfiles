@@ -10,7 +10,9 @@ vim:
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	mkdir -p ~/.vim/swp
 	mkdir -p ~/.vim/undo
-	cp ./.vimrc ~/.vimrc
+	mkdir -p ~/.vim/ftplugin
+	cp -R ./vim/ftplugin/* ~/.vim/ftplugin/
+	cp ./vim/.vimrc ~/.vimrc
 	vim +PlugInstall! -c qa!
 
 tmux:
