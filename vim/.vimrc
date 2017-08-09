@@ -1,6 +1,6 @@
-filetype off
-
+filetype plugin indent on
 syntax on
+
 " Default config {{{
 set term=screen-256color
 set t_Co=256
@@ -67,61 +67,61 @@ vmap <silent> <Leader>x :XMLBeautify<CR>
 call plug#begin('~/.vim/plugged')
 
 Plug 'gmarik/Vundle.vim'
-Plug 'majutsushi/tagbar'
-Plug 'blueyed/vim-colors-solarized'
 Plug 'embear/vim-localvimrc'
-Plug 'nathanaelkane/vim-indent-guides', { 'on': 'IndentGuidesToggle' }
-Plug 'scrooloose/syntastic'
-Plug 'rking/ag.vim', { 'on': 'Ag' }
-Plug 'tpope/vim-surround'
-Plug 'evidens/vim-twig'
-Plug 'Townk/vim-autoclose'
-Plug 'edkolev/promptline.vim'
-Plug 'chase/vim-ansible-yaml'
-Plug 'tpope/vim-markdown'
-Plug 'groenewege/vim-less'
-Plug 'patgrudniewski/vim-xml-beautifier'
+
+" Polyglot
 Plug 'sheerun/vim-polyglot'
+Plug 'nelsyeung/twig.vim'
+
+" Workspace
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'edkolev/promptline.vim'
+Plug 'majutsushi/tagbar'
+Plug 'rking/ag.vim', { 'on': 'Ag' }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
+
+" GIT
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" Syntax
+Plug 'scrooloose/syntastic'
+Plug 'patgrudniewski/vim-xml-beautifier'
+Plug 'nathanaelkane/vim-indent-guides', { 'on': 'IndentGuidesToggle' }
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
+Plug 'mxw/vim-jsx'
+Plug 'Shutnik/jshint2.vim'
+Plug 'Townk/vim-autoclose'
+
+call plug#end()
+
+" Polyglot {{{
+let g:polyglot_disabled = ['twig']
+" }}}
 
 " Nerd {{{
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
 let NERDTreeIgnore = ['\.o']
 let NERDTreeShowHidden = 1
-
-Plug 'scrooloose/nerdcommenter'
 " }}}
 
 " Close Tag {{{
-Plug 'alvan/vim-closetag'
-let g:closetag_filenames = "*.html,*.xml,*.xhtml,*.phtml"
-
+let g:closetag_filenames = "*.html,*.xml,*.xhtml,*.phtml,*.js,*.twig"
 " }}}
 
 " Syntastic {{{
-
 let g:syntastic_mode_map = {
     \ "mode": "active",
     \ "passive_filetypes": ["asm"]}
 " }}}
 
-Plug 'bling/vim-airline'
+" Airline {{{
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set laststatus=2
-
-Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
-set wildignore+=*/.gem/*,*/vendor/Plug/*,*/tmp/*,log/*,*/tmp/*,*/public/system*,*.orig,*.o
-
-Plug 'wikitopian/hardmode'
-
-" GIT {{{
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-
-call plug#end()
-filetype plugin indent on
-
 " }}}
 
 " Color scheme {{{
@@ -133,11 +133,7 @@ endif
 " }}}
 
 " JS {{{
-Plug 'mxw/vim-jsx'
-
 let g:jsx_ext_required = 0
-
-Plug 'Shutnik/jshint2.vim'
 let jshint2_save = 1
 let jshint2_close = 0
 " }}}
