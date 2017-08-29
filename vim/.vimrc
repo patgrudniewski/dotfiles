@@ -93,7 +93,6 @@ Plug 'nathanaelkane/vim-indent-guides', { 'on': 'IndentGuidesToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
-Plug 'mxw/vim-jsx'
 Plug 'Shutnik/jshint2.vim'
 Plug 'Townk/vim-autoclose'
 
