@@ -1,9 +1,13 @@
-install: vim tmux fish
+install: git vim tmux yakuake fish
+
+git:
+	utils/install.sh \
+		git
+	cp git/.gitconfig ~/.gitconfig
 
 vim:
 	utils/install.sh \
 		ctags \
-		git \
 		vim
 	mkdir -p ~/.vim
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -24,10 +28,10 @@ tmux:
 
 fish:
 	utils/install.sh fish
+	cp ./config.fish ~/.config/fish/config.fish
 	chsh -s $$(cat /etc/shells | grep 'fish')
 	curl -L https://get.oh-my.fish | fish
 	omf install bobthefish
-	cp ./config.fish ~/.config/fish/config.fish
 
 yakuake:
 	utils/install.sh \
@@ -36,4 +40,4 @@ yakuake:
 	cp yakuake/yakuakerc ~/.config/yakuakerc
 	cp yakuake/yakuake.desktop ~/.config/autostart/yakuake.desktop
 
-.PHONY: vim tmux fish install
+.PHONY: git vim tmux fish yakuake install
