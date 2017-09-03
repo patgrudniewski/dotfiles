@@ -30,12 +30,13 @@ fish:
 	utils/install.sh fish
 	cp ./config.fish ~/.config/fish/config.fish
 	chsh -s $$(cat /etc/shells | grep 'fish')
-	curl -L https://get.oh-my.fish | fish
-	omf install bobthefish
+	git clone https://github.com/oh-my-fish/oh-my-fish
+	oh-my-fish/bin/install --offline --noninteractive --yes
+	rm -rf oh-my-fish
 
 kde:
 	cp kde/kwinrc ~/.config/kwinrc
-	cp kde/kglobalshortcuts ~/.config/kglobalshortcuts
+	cp kde/kglobalshortcutsrc ~/.config/kglobalshortcutsrc
 
 yakuake:
 	utils/install.sh \

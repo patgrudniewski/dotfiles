@@ -4,7 +4,7 @@ _k_friendly_name=KDE Daemon
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Włącz/wyłącz czytnik ekranowy
-_k_friendly_name=kaccess
+_k_friendly_name=Dostępność
 
 [kcm_touchpad]
 Disable Touchpad=Touchpad Off,Touchpad Off,Wyłącz gładzik
@@ -22,7 +22,7 @@ PowerOff=Power Off,Power Off,Wyłącz
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Pokaż aktywność systemu
 Sleep=Sleep,Sleep,Uśpij
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Przełącz podświetlenie klawiatury
-_k_friendly_name=Zarządzanie energią
+_k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Przełącz ekran
 
 [khotkeys]
@@ -93,7 +93,7 @@ Switch to Desktop 19=none,none,Przełącz na pulpit 19
 Switch to Desktop 2=Ctrl+Shift+F2,Ctrl+F2,Przełącz na pulpit 2
 Switch to Desktop 20=none,none,Przełącz na pulpit 20
 Switch to Desktop 3=Ctrl+Shift+F3,Ctrl+F3,Przełącz na pulpit 3
-Switch to Desktop 4=Ctrl+F4,Ctrl+F4,Przełącz na pulpit 4
+Switch to Desktop 4=Ctrl+Shift+F4,Ctrl+F4,Przełącz na pulpit 4
 Switch to Desktop 5=none,none,Przełącz na pulpit 5
 Switch to Desktop 6=none,none,Przełącz na pulpit 6
 Switch to Desktop 7=none,none,Przełącz na pulpit 7
@@ -208,6 +208,16 @@ stopmedia=Media Stop,Media Stop,Zatrzymaj odtwarzanie pliku
 
 [plasmashell]
 _k_friendly_name=Plazma
+activate task manager entry 1=Meta+1,Meta+1,Aktywuj wpis 1 na pasku zadań
+activate task manager entry 10=,Meta+0,Aktywuj wpis 10 na pasku zadań
+activate task manager entry 2=Meta+2,Meta+2,Aktywuj wpis 2 na pasku zadań
+activate task manager entry 3=Meta+3,Meta+3,Aktywuj wpis 3 na pasku zadań
+activate task manager entry 4=Meta+4,Meta+4,Aktywuj wpis 4 na pasku zadań
+activate task manager entry 5=Meta+5,Meta+5,Aktywuj wpis 5 na pasku zadań
+activate task manager entry 6=Meta+6,Meta+6,Aktywuj wpis 6 na pasku zadań
+activate task manager entry 7=Meta+7,Meta+7,Aktywuj wpis 7 na pasku zadań
+activate task manager entry 8=Meta+8,Meta+8,Aktywuj wpis 8 na pasku zadań
+activate task manager entry 9=Meta+9,Meta+9,Aktywuj wpis 9 na pasku zadań
 activate widget 3=Alt+F1,none,Włącz element interfejsu: Aktywator programów
 clear-history=none,none,Wyczyść historię schowka
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Włącz działania schowka
