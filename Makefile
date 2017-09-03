@@ -1,4 +1,4 @@
-install: git vim tmux yakuake fish
+install: git vim tmux yakuake kde fish
 
 git:
 	utils/install.sh \
@@ -33,6 +33,10 @@ fish:
 	curl -L https://get.oh-my.fish | fish
 	omf install bobthefish
 
+kde:
+	cp kde/kwinrc ~/.config/kwinrc
+	cp kde/kglobalshortcuts ~/.config/kglobalshortcuts
+
 yakuake:
 	utils/install.sh \
 		yakuake
@@ -40,4 +44,4 @@ yakuake:
 	cp yakuake/yakuakerc ~/.config/yakuakerc
 	cp yakuake/yakuake.desktop ~/.config/autostart/yakuake.desktop
 
-.PHONY: git vim tmux fish yakuake install
+.PHONY: git vim tmux fish yakuake kde install
