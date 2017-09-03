@@ -29,4 +29,11 @@ fish:
 	omf install bobthefish
 	cp ./config.fish ~/.config/fish/config.fish
 
+yakuake:
+	utils/install.sh \
+		yakuake
+	mkdir -p ~/.config/autostart
+	cp yakuake/yakuakerc ~/.config/yakuakerc
+	cp yakuake/yakuake.desktop ~/.config/autostart/yakuake.desktop
+
 .PHONY: vim tmux fish install
