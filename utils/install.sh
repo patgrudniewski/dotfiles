@@ -13,6 +13,10 @@ case $PLATFORM_DIST in
     fedora)
         INSTALLER+=" dnf install -y"
         ;;
+    *)
+        echo "Platform $PLATFORM_DIST is not supported by this script"
+        exit 1
+        ;;
 esac
 
 $INSTALLER $@
