@@ -49,6 +49,9 @@ map <F12> :TagbarToggle<CR>
 map H :tabp<CR>
 map L :tabn<CR>
 
+map > :bn<CR>
+map < :bp<CR>
+
 map <Leader>S :Ag! <cword><CR>
 
 map <C-E> :NERDTreeToggle<CR>
@@ -119,6 +122,7 @@ let g:syntastic_mode_map = {
 
 " Airline {{{
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_close_button = 0
 let g:airline_powerline_fonts = 1
 set laststatus=2
 " }}}
