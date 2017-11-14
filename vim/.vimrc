@@ -49,8 +49,8 @@ map <F12> :TagbarToggle<CR>
 map H :tabp<CR>
 map L :tabn<CR>
 
-map > :bn<CR>
-map < :bp<CR>
+map X :bn<CR>
+map Z :bp<CR>
 
 map <Leader>S :Ag! <cword><CR>
 
