@@ -1,7 +1,9 @@
 install:
 	../utils/install.sh \
 		ctags \
+		python3-pip \
 		vim
+	sudo pip3 install py3kwarn
 	mkdir -p ~/.vim
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
