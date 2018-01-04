@@ -118,6 +118,7 @@ let g:closetag_filenames = "*.html,*.xml,*.xhtml,*.phtml,*.js,*.twig"
 let g:syntastic_mode_map = {
     \ "mode": "active",
     \ "passive_filetypes": ["asm"]}
+let g:syntastic_python_checkers = ['py3kwarn']
 " }}}
 
 " Airline {{{
