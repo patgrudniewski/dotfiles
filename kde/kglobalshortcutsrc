@@ -232,6 +232,13 @@ show dashboard=Ctrl+F12,Ctrl+F12,Pokaż pulpit
 show-on-mouse-pos=none,none,Otwórz Klippera pod wskaźnikiem myszy
 stop current activity=Meta+S,Meta+S,Zatrzymaj bieżącą aktywność
 
+[screenshot-tool.desktop]
+AreaShot=,none,Zrzut wybranego obszaru
+ScreenShot=Ctrl+Shift+Print,none,Zrzut całego ekranu
+WindowShot=Ctrl+Print,none,Zrzut bieżącego okna
+_k_friendly_name=Uruchom Zrzut ekranu
+_launch=Print,none,Uruchom Zrzut ekranu
+
 [yakuake]
 _k_friendly_name=Yakuake
 toggle-window-state=F1,F12,Otwórz/ukryj Yakuake
