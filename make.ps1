@@ -4,7 +4,7 @@ param (
 )
 
 $notProcessable = '.git','utils'
-Get-ChildItem -Directory | ForEach-Object {
+Get-ChildItem -Directory $PSScriptRoot | ForEach-Object {
     $dirname = "$_"
     If ($notProcessable.Contains($dirname)) {
         return
