@@ -5,10 +5,10 @@ install: $(DIRS)
 fish: git
 	$(MAKE) -C fish
 
-vim: git
+vim: curl git
 	$(MAKE) -C vim
 
-git kde tmux yakuake:
+curl git kde tmux yakuake:
 	$(MAKE) -C $@
 
-.PHONY: install fish git kde tmux vim yakuake
+.PHONY: install curl fish git kde tmux vim yakuake

@@ -8,6 +8,11 @@ $mapping = array(
     'amazon' => array(
         'python3-pip' => 'python36-pip',
     ),
+    'alpine' => array(
+        'python3-pip' => 'python3',
+	'tmux-powerline' => '', // @TODO: install from source
+	'tmuxinator' => '', // @TODO: install from source
+    ),
 );
 
 $distMapping = array_key_exists($system, $mapping) ? $mapping[$system] : array();

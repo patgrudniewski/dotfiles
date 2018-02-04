@@ -2,5 +2,10 @@
 
 import platform
 
-dist = platform.linux_distribution(supported_dists=['system'])
+supported_dists = [
+    'alpine',
+    'system',
+]
+
+dist = platform.linux_distribution(supported_dists = supported_dists)
 print dist[0] + ' ' + dist[1]
