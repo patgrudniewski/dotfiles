@@ -13,7 +13,7 @@ PLATFORM_DIST=${PLATFORM[0]}
 INSTALLER=sudo
 
 case $PLATFORM_DIST in
-    fedora)
+    fedora|Fedora)
         INSTALLER+=" dnf install -y"
         ;;
     Amazon)
