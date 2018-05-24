@@ -103,6 +103,8 @@ call plug#end()
 
 " Polyglot {{{
 let g:polyglot_disabled = ['twig']
+
+autocmd BufNewFile,BufRead *.gv setfiletype dot
 " }}}
 
 " Nerd {{{
