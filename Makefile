@@ -8,7 +8,7 @@ fish: git
 vim: git
 	$(MAKE) -C vim
 
-docker git kde tmux yakuake:
+docker git google-chrome kde tmux yakuake:
 	$(MAKE) -C $@
 
-.PHONY: install docker fish git kde tmux vim yakuake
+.PHONY: install docker fish git google-chrome kde tmux vim yakuake
