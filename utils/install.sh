@@ -25,6 +25,11 @@ case $PLATFORM_DIST in
         ;;
 esac
 
+which php
+if [ $? -ne 0 ]; then
+    $INSTALLER php
+fi
+
 PACKAGES=
 POST_INSTALL=
 while [ $# -gt 0 ]; do
