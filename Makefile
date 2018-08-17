@@ -1,4 +1,4 @@
-install: docker fish git google-chrome guake tmux vim
+install: docker fish git google-chrome guake postman tmux vim
 
 fish: git
 	$(MAKE) -C fish
@@ -6,7 +6,7 @@ fish: git
 vim: git
 	$(MAKE) -C vim
 
-docker git google-chrome guake kde tmux yakuake:
+docker git google-chrome guake kde postman tmux yakuake:
 	$(MAKE) -C $@
 
-.PHONY: install docker fish git google-chrome guake kde tmux vim yakuake
+.PHONY: install docker fish git google-chrome guake kde postman tmux vim yakuake
