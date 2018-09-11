@@ -2,6 +2,7 @@ install:
 	../utils/install.sh \
 		ctags \
 		python3-pip \
+		the_silver_searcher \
 		vim
 	sudo pip3 install py3kwarn
 	mkdir -p ~/.vim
