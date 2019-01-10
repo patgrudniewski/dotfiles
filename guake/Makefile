@@ -3,6 +3,7 @@ install:
 	../utils/install.sh \
 		guake
 	mkdir -p $(CONFIG_PATH)
+	mkdir -p ~/.config/autostart
 	cp -Rv ./general $(CONFIG_PATH)/general
 	cp -Rv ./keybindings $(CONFIG_PATH)/keybindings
 	cp -Rv ./style $(CONFIG_PATH)/style
