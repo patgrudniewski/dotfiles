@@ -3,10 +3,13 @@ install: docker fish git google-chrome guake postman tmux vim
 fish: git
 	$(MAKE) -C fish
 
-vim: git
+tmux: powerline
+	$(MAKE) -C tmux
+
+vim: git powerline
 	$(MAKE) -C vim
 
-docker git google-chrome guake kde postman tmux yakuake:
+docker git google-chrome guake kde postman powerline yakuake:
 	$(MAKE) -C $@
 
-.PHONY: install docker fish git google-chrome guake kde postman tmux vim yakuake
+.PHONY: install docker fish git google-chrome guake kde postman powerline tmux vim yakuake

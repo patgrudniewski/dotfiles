@@ -1,7 +1,7 @@
 install:
+	./deps.sh
 	../utils/install.sh \
-		fish \
-		util-linux-user
+		fish
 	mkdir -p ~/.config/fish
 	cp config.fish ~/.config/fish/config.fish
 	chsh -s $$(cat /etc/shells | grep -m 1 'fish')
