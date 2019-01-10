@@ -16,7 +16,7 @@ case $PLATFORM_DIST in
     fedora|Fedora)
         INSTALLER+=" dnf install -y"
         ;;
-    Amazon)
+    Amazon|CentOS)
         INSTALLER+=" yum install -y"
         ;;
     *)
