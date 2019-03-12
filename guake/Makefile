@@ -1,5 +1,6 @@
 CONFIG_PATH=~/.config/gconf/apps/guake
 install:
+	../utils/repositoryInstaller.sh guake
 	../utils/install.sh \
 		guake
 	mkdir -p $(CONFIG_PATH)
