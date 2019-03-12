@@ -1,4 +1,5 @@
 install:
+	../utils/repositoryInstaller.sh tmux
 	sudo pip3 install powerline-status
 	$(eval POWERLINE_PATH := $(shell pip3 show powerline-status | grep 'Location' | cut -d' ' -f 2))
 	../utils/install.sh \

@@ -1,4 +1,5 @@
 install:
+	sudo ../utils/repositoryInstaller.sh fish
 	./deps.sh
 	../utils/install.sh \
 		fish
