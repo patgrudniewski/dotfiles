@@ -1,6 +1,5 @@
 #! /usr/bin/python
 
-import platform
+import distro
 
-dist = platform.linux_distribution(supported_dists=['system'])
-print dist[0] + ' ' + dist[1]
+print(distro.id() + ' ' + distro.version())

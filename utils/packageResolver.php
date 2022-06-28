@@ -9,7 +9,6 @@ $mapping = array(
         'python3-pip' => 'python36-pip',
     ),
     'centos' => array(
-        'python3-pip' => 'python34-pip',
     ),
     'fedora' => array(
         'chsh' => 'util-linux-user',
