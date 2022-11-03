@@ -1,6 +1,8 @@
-install: vim
+install: tmux vim
 
+tmux:
+	$(MAKE) -C tmux
 vim: 
 	$(MAKE) -C vim
 
-.PHONY: install vim
+.PHONY: install tmux vim
