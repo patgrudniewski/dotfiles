@@ -1,7 +1,7 @@
 install:
-	../utils/install.sh \
+	brew install \
 		ctags \
-		python3-pip \
+		python3 \
 		the_silver_searcher \
 		vim
 	sudo pip3 install py3kwarn
