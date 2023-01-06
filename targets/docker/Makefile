@@ -18,3 +18,5 @@ centos:
 	 sudo systemctl enable docker
 	 sudo systemctl start docker
 	 sudo usermod -aG docker $(USERNAME)
+	 sudo cp -v ./rhel/docker-compose.sh /usr/local/bin/docker-compose
+	 sudo chmod +x /usr/local/bin/docker-compose
