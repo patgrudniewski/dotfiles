@@ -1,10 +1,7 @@
-install:
-	brew install \
-		ctags \
-		python3 \
-		the_silver_searcher \
-		vim
-	sudo pip3 install py3kwarn
+centos: build
+macos: macos-deps build
+
+build: 
 	mkdir -p ~/.vim
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -14,5 +11,3 @@ install:
 	cp -R ftplugin/* ~/.vim/ftplugin/
 	cp .vimrc ~/.vimrc
 	vim +PlugInstall! -c qa!
-
-.PHONY: install
