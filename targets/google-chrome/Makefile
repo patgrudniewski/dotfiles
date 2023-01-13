@@ -1,7 +1,7 @@
 TMP_DIR = /tmp/dotfiles/chrome
 
 macos:
-	# TODO: to be implemented
+	brew install --cask google-chrome
 
 centos:
 	sudo update-crypto-policies --set DEFAULT:SHA1

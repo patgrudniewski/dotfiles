@@ -1,6 +1,6 @@
 USERNAME = $(shell whoami)
 macos:
-	# TODO: needs implementation
+	brew install --cask docker
 
 centos:
 	 sudo dnf install \
