@@ -1,7 +1,7 @@
 oh-my-zsh:
 	curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh --output /tmp/omz_install.sh
 	chmod +x /tmp/omz_install.sh
-	/tmp/omz_install.sh
+	RUNZSH=no /tmp/omz_install.sh
 	rm -rf /tmp/omz_install.sh
 
 powerline:
